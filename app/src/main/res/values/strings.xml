@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- nombre de la aplicacion -->
+    <string name="app_name">GeoNotes</string>
+
+    <!-- textos del widget -->
+    <string name="widget_title">notas guardadas</string>
+    <string name="widget_count_format">total: %1$d</string>
+
+    <!-- textos de la interfaz de notas -->
+    <string name="hint_note">escribe tu nota...</string>
+    <string name="btn_save_note">guardar nota</string>
+
+    <!-- titulo del fragment de sensores -->
+    <string name="sensor_title">acelerometro / canvas</string>
+
+</resources>
