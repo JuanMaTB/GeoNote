@@ -64,7 +64,7 @@ app/src/main/res/values/google_maps_api.xml
 En el repositorio, este fichero contiene la clave **vacia**:
 
 
-▶️ como ejecutar el proyecto
+## ▶️ como ejecutar el proyecto
 
 Para probar la aplicacion con tu propia API key:
 
@@ -78,11 +78,11 @@ Introduce tu clave entre las etiquetas:
 <string name="google_maps_key">TU_API_KEY_AQUI</string>
 Ejecuta el proyecto normalmente en el emulador o dispositivo.
 
-⚠️ Nota importante
+## ⚠️ Nota importante
 La API key no debe subirse al repositorio.
 El proyecto esta preparado para que cada persona use la suya propia.
 
-📦 sobre la APK
+## 📦 sobre la APK
 
 
 ✅ La APK final SI debe compilarse con una API key valida
@@ -93,7 +93,7 @@ El proyecto esta preparado para que cada persona use la suya propia.
 
 
 
-📐 permisos utilizados
+## 📐 permisos utilizados
 En el AndroidManifest.xml se declaran:
 
 permisos de ubicacion (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION)
@@ -103,7 +103,7 @@ permisos de red (INTERNET, ACCESS_NETWORK_STATE)
 Estos ultimos se incluyen para asegurar que Google Maps funcione correctamente
 independientemente del emulador o dispositivo utilizado para la correccion.
 
-🧪 widget de escritorio
+## 🧪 widget de escritorio
 El proyecto incluye un widget que:
 
 muestra el numero total de notas
@@ -115,6 +115,6 @@ abre la app al pulsarlo
 El widget no se actualiza automaticamente por tiempo, sino solo cuando cambian los datos,
 para evitar consumo innecesario de recursos.
 
-👤 autor
+## 👤 autor
 
 Proyecto desarrollado por Juan Manuel Torrado
