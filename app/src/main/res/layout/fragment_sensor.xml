@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sensor_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- titulo del bloque de sensores -->
+    <TextView
+        android:id="@+id/tvSensorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sensor_title"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <!-- vista personalizada que dibuja el circulo con canvas -->
+    <com.juanma.geonotes.ui.sensor.CircleView
+        android:id="@+id/circleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="circulo que cambia de tamaño segun acelerometro" />
+
+    <!-- valores actuales del acelerometro -->
+    <TextView
+        android:id="@+id/tvValues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="x=0.00 y=0.00 z=0.00"
+        android:paddingTop="8dp" />
+
+</LinearLayout>
