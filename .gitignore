@@ -1,0 +1,18 @@
+# android / gradle
+.gradle/
+build/
+
+# android studio
+.idea/
+*.iml
+
+# local config
+local.properties
+
+# logs
+*.log
+
+# mac / windows
+.DS_Store
+Thumbs.db
+
