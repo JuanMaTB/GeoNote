@@ -1,0 +1,14 @@
+<resources>
+    <!--
+        este string debe ir vacio en el repositorio
+
+        para que google maps funcione:
+        1) crea una api key en google cloud
+        2) pega la clave aqui entre las etiquetas como en el ejemplo que he metido numeros del 1 al 0
+        3) ejecuta la app
+
+        ejemplo:
+        <string name="google_maps_key">1234567890</string>
+    -->
+    <string name="google_maps_key"></string>
+</resources>
