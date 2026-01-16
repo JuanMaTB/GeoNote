@@ -47,7 +47,7 @@ Incluye tambien un ejemplo de uso de **sensores (acelerometro)** junto con una *
 
 Por **motivos de seguridad**, la **API Key de Google Maps NO se incluye en el repositorio**.
 
-Esto es **intencionado** y sigue exactamente las indicaciones del profesor.
+Esto es **intencionado**.
 
 ### 📌 donde va la API key
 
