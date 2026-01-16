@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootNote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- boton unico para alternar entre crear y ver notas -->
+    <Button
+        android:id="@+id/btnToggleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ver / crear notas" />
+
+    <!-- modo crear nota -->
+    <LinearLayout
+        android:id="@+id/layoutCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <!-- texto de la nota -->
+        <EditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="escribe tu nota..."
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+        <!-- boton para guardar la nota -->
+        <Button
+            android:id="@+id/btnSaveNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="guardar nota" />
+    </LinearLayout>
+
+    <!-- modo lista de notas -->
+    <LinearLayout
+        android:id="@+id/layoutList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- aqui se carga el fragment con el recycler -->
+        <FrameLayout
+            android:id="@+id/notesListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
