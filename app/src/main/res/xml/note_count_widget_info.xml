@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- configuracion del widget de escritorio -->
+<!-- define tamaño, layout y comportamiento -->
+
 <appwidget-provider
     xmlns:android="http://schemas.android.com/apk/res/android"
-
-    <!-- tamaño minimo del widget -->
     android:minWidth="180dp"
     android:minHeight="80dp"
-
-    <!-- no uso refresco automatico, lo actualizo yo al guardar notas -->
     android:updatePeriodMillis="0"
-
-    <!-- layout que se usa para pintar el widget -->
     android:initialLayout="@layout/widget_note_count"
-
-    <!-- permito redimensionar en horizontal y vertical -->
     android:resizeMode="horizontal|vertical"
-
-    <!-- widget solo para la pantalla principal -->
     android:widgetCategory="home_screen" />
