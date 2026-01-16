@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_widget"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <!-- titulo del widget -->
+    <TextView
+        android:id="@+id/tvWidgetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GeoNotes"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#111111" />
+
+    <!-- fila con el contador de notas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="notas:"
+            android:textSize="13sp"
+            android:textColor="#111111" />
+
+        <TextView
+            android:id="@+id/tvWidgetCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- texto de la ultima nota guardada -->
+    <TextView
+        android:id="@+id/tvWidgetLast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ultima GeoNota: (sin notas)"
+        android:textSize="12sp"
+        android:textColor="#111111"
+        android:layout_marginTop="6dp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+</LinearLayout>
